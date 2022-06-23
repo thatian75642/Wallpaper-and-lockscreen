@@ -190,8 +190,8 @@ Invoke-WebRequest -UseBasicParsing -Uri $DarkWallPaperURL -OutFile "$env:TEMP\Da
 if (Test-Path -Path "$env:TEMP\wallpaper.jpg"){
     Write-Output "Running Command: Copy-Item .\wallpaper.jpg C:\Windows\Web\Wallpaper\Windows\img0.jpg -Force -Verbose"
     Copy-Item "$env:TEMP\wallpaper.jpg" "C:\Windows\Web\Wallpaper\Windows\img0.jpg" -Force -Verbose
-    Copy-Item "$env:TEMP\Darkwallpaper.jpg" "C:\Windows\Web\Wallpaper\Windows\img19.jpg" -Force -Verbose
-    Copy-Item "$env:TEMP\Darkwallpaper.jpg" "C:\Windows\Web\Wallpaper\Theme1\img19.jpg" -Force -Verbose
+    Copy-Item "$env:TEMP\Darkmodewallpaper.jpg" "C:\Windows\Web\Wallpaper\Windows\img19.jpg" -Force -Verbose
+    Copy-Item "$env:TEMP\Darkmodewallpaper.jpg" "C:\Windows\Web\Wallpaper\Theme1\img19.jpg" -Force -Verbose
     }
 else
     {
